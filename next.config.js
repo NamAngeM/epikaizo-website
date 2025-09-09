@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    // Désactiver la collecte de traces pour éviter les erreurs de stack overflow
+    outputFileTracingExcludes: ['**/*'],
+  },
   images: {
     domains: ['localhost', 'strapi.epikaizo.com'],
     formats: ['image/webp', 'image/avif'],
