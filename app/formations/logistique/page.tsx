@@ -32,6 +32,18 @@ const breadcrumbItems = [
 
 const specializations = [
   {
+    title: 'Logistique Maritime Internationale',
+    icon: Ship,
+    description: 'Spécialisation dans le transport maritime et les opérations portuaires internationales.',
+    skills: [
+      'Transport maritime',
+      'Gestion portuaire',
+      'Commerce international',
+      'Réglementation maritime',
+      'Conteneurisation'
+    ]
+  },
+  {
     title: 'Logistique Pétrolière et Industrielle',
     icon: Fuel,
     description: 'Spécialisation dans la gestion logistique des produits pétroliers et industriels.',
@@ -39,18 +51,8 @@ const specializations = [
       'Gestion des stocks pétroliers',
       'Transport de matières dangereuses',
       'Réglementation industrielle',
-      'Optimisation des flux'
-    ]
-  },
-  {
-    title: 'Logistique Aéroportuaire',
-    icon: Package,
-    description: 'Formation spécialisée dans la logistique et le fret aéroportuaire.',
-    skills: [
-      'Gestion du fret aérien',
-      'Opérations cargo',
-      'Réglementation IATA',
-      'Coordination aéroportuaire'
+      'Optimisation des flux',
+      'Sécurité industrielle'
     ]
   },
   {
@@ -61,29 +63,44 @@ const specializations = [
       'Planification des approvisionnements',
       'Gestion des stocks',
       'Prévision de la demande',
-      'Optimisation des coûts'
+      'Optimisation des coûts',
+      'ERP et systèmes d\'information'
     ]
   },
   {
-    title: 'Logistique Achat et Vente Prestations',
+    title: 'Achat et Vente de Prestations',
     icon: Briefcase,
     description: 'Formation aux achats stratégiques et à la vente de prestations logistiques.',
     skills: [
       'Négociation commerciale',
       'Achats stratégiques',
       'Gestion des fournisseurs',
-      'Développement commercial'
+      'Développement commercial',
+      'Contracts management'
     ]
   },
   {
-    title: 'Logistique Maritime Internationale',
-    icon: Ship,
-    description: 'Spécialisation dans le transport maritime et les opérations portuaires.',
+    title: 'Logistique Hospitalière',
+    icon: Package,
+    description: 'Spécialisation dans la logistique des établissements de santé et pharmaceutique.',
     skills: [
-      'Transport maritime',
-      'Gestion portuaire',
-      'Commerce international',
-      'Réglementation maritime'
+      'Gestion des stocks médicaux',
+      'Chaîne du froid pharmaceutique',
+      'Réglementation sanitaire',
+      'Logistique d\'urgence',
+      'Traçabilité médicale'
+    ]
+  },
+  {
+    title: 'Assistance Logistique Aéroportuaire',
+    icon: Package,
+    description: 'Formation spécialisée dans la logistique et le fret aéroportuaire.',
+    skills: [
+      'Gestion du fret aérien',
+      'Opérations cargo',
+      'Réglementation IATA',
+      'Coordination aéroportuaire',
+      'Agent de piste et terminal'
     ]
   }
 ];

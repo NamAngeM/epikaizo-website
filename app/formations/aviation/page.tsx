@@ -29,31 +29,80 @@ const breadcrumbItems = [
 
 const programs = [
   {
+    title: 'Personnel Navigant Commercial',
+    duration: '18 mois',
+    options: [
+      'Hôtesse de l\'air et Steward',
+      'Certificat de formation au personnel navigant commercial',
+      'Formation sécurité et secourisme'
+    ],
+    description: 'Formation complète au personnel navigant commercial avec certification officielle.',
+    cost: '1 000 000 FCFA'
+  },
+  {
     title: 'Agent d\'Escale Commercial',
     duration: '12 mois',
     options: [
       'Option accueil et enregistrement',
       'Formation en billeterie'
     ],
-    description: 'Formation complète aux métiers de l\'accueil aéroportuaire et de la gestion des passagers.'
+    description: 'Formation complète aux métiers de l\'accueil aéroportuaire et de la gestion des passagers.',
+    cost: '1 000 000 FCFA'
   },
   {
-    title: 'Hôtesse de l\'Air et Steward',
-    duration: '18 mois',
+    title: 'Agent Technique d\'Exploitation',
+    duration: '15 mois',
     options: [
-      'Certificat de formation au personnel navigant commercial',
-      'Formation sécurité et secourisme'
+      'Opérations techniques au sol',
+      'Maintenance de premier niveau',
+      'Sécurité aéroportuaire'
     ],
-    description: 'Formation au personnel navigant commercial avec certification officielle.'
+    description: 'Formation aux techniques d\'exploitation et de maintenance aéroportuaire.',
+    cost: '1 100 000 FCFA'
   },
   {
     title: 'Management des Opérations Aéroportuaires',
     duration: '24 mois',
     options: [
       'Gestion des opérations au sol',
-      'Coordination aéroportuaire'
+      'Coordination aéroportuaire',
+      'Trafic aérien'
     ],
-    description: 'Formation de niveau supérieur pour la gestion et coordination des opérations aéroportuaires.'
+    description: 'Formation de niveau supérieur pour la gestion et coordination des opérations aéroportuaires.',
+    cost: '1 200 000 FCFA'
+  },
+  {
+    title: 'Formation Pilote',
+    duration: '36 mois',
+    options: [
+      'Licence de pilote privé (PPL)',
+      'Licence de pilote commercial (CPL)',
+      'Formation théorique et pratique'
+    ],
+    description: 'Formation complète pour devenir pilote professionnel.',
+    cost: 'Sur devis'
+  },
+  {
+    title: 'Maintenance Aéronautique',
+    duration: '24 mois',
+    options: [
+      'Maintenance préventive',
+      'Diagnostic et réparation',
+      'Certification Part-66'
+    ],
+    description: 'Formation aux métiers de la maintenance aéronautique.',
+    cost: '1 100 000 FCFA'
+  },
+  {
+    title: 'Sureté Aéroportuaire',
+    duration: '6 mois',
+    options: [
+      'Contrôle sûreté passagers',
+      'Inspection bagages',
+      'Réglementation sûreté'
+    ],
+    description: 'Formation spécialisée en sûreté et sécurité aéroportuaire.',
+    cost: '800 000 FCFA'
   }
 ];
 
@@ -77,9 +126,11 @@ const requirements = [
 
 const costs = [
   { item: 'Frais d\'inscription', amount: '100 000 FCFA' },
-  { item: 'Frais de formation', amount: '1 000 000 - 1 200 000 FCFA' },
+  { item: 'Formation niveau Bac/Terminal', amount: '1 000 000 FCFA' },
+  { item: 'Formation niveau supérieur', amount: '1 200 000 FCFA' },
   { item: 'Uniforme', amount: '100 000 FCFA' },
-  { item: 'Uniforme TP et stage', amount: '50 000 FCFA' }
+  { item: 'Uniforme TP et stage', amount: '50 000 FCFA' },
+  { item: 'Acompte à l\'inscription', amount: '600 000 FCFA' }
 ];
 
 export default function AviationPage() {
