@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Accueil', href: '/' },
-  { label: 'Actualités', href: '/actualites' },
+  { name: 'Accueil', url: '/' },
+  { name: 'Actualités', url: '/actualites' },
 ];
 
 // Données d'exemple pour les actualités

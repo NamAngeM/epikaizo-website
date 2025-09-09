@@ -25,9 +25,9 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Accueil', href: '/' },
-  { label: 'Formations', href: '/formations' },
-  { label: 'Logistique', href: '/formations/logistique' },
+  { name: 'Accueil', url: '/' },
+  { name: 'Formations', url: '/formations' },
+  { name: 'Logistique', url: '/formations/logistique' },
 ];
 
 const specializations = [

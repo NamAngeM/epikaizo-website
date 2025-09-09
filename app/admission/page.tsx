@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Accueil', href: '/' },
-  { label: 'Admission', href: '/admission' },
+  { name: 'Accueil', url: '/' },
+  { name: 'Admission', url: '/admission' },
 ];
 
 const admissionSteps = [

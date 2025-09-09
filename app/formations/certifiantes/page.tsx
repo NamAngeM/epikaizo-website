@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Accueil', href: '/' },
-  { label: 'Formations', href: '/formations' },
-  { label: 'Formations Certifiantes', href: '/formations/certifiantes' },
+  { name: 'Accueil', url: '/' },
+  { name: 'Formations', url: '/formations' },
+  { name: 'Formations Certifiantes', url: '/formations/certifiantes' },
 ];
 
 const programs = [

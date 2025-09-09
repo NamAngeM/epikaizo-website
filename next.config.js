@@ -2,7 +2,9 @@
 const nextConfig = {
   experimental: {
     // Désactiver la collecte de traces pour éviter les erreurs de stack overflow
-    outputFileTracingExcludes: ['**/*'],
+    outputFileTracingExcludes: {
+      '*': ['**/*']
+    }
   },
   images: {
     domains: ['localhost', 'strapi.epikaizo.com'],

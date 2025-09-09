@@ -22,9 +22,9 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Accueil', href: '/' },
-  { label: 'Formations', href: '/formations' },
-  { label: 'Aviation Civile', href: '/formations/aviation' },
+  { name: 'Accueil', url: '/' },
+  { name: 'Formations', url: '/formations' },
+  { name: 'Aviation Civile', url: '/formations/aviation' },
 ];
 
 const programs = [

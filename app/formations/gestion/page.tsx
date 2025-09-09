@@ -25,9 +25,9 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Accueil', href: '/' },
-  { label: 'Formations', href: '/formations' },
-  { label: 'Sciences de Gestion', href: '/formations/gestion' },
+  { name: 'Accueil', url: '/' },
+  { name: 'Formations', url: '/formations' },
+  { name: 'Sciences de Gestion', url: '/formations/gestion' },
 ];
 
 const specializations = [
