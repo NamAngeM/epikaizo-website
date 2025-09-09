@@ -1,0 +1,13 @@
+# Images Hero - À Remplacer
+
+Placez ici les 5 images du slider hero :
+
+1. hero-1.jpg - Étudiants en formation
+2. hero-2.jpg - Campus universitaire
+3. hero-3.jpg - Formation en groupe
+4. hero-4.jpg - Laboratoire/atelier
+5. hero-5.jpg - Cérémonie de diplômes
+
+Dimensions recommandées : 1920x1080px
+Format : JPG
+Taille : < 500KB par image
