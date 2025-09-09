@@ -9,30 +9,7 @@ export function Hero() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
-    <>
-      {/* Bannière Rentrée Académique */}
-      <div className="bg-gradient-to-r from-epikaizo-red to-primary-600 text-white py-3">
-        <div className="container-custom">
-          <div className="flex items-center justify-center text-center">
-            <div className="flex items-center space-x-4">
-              <span className="bg-epikaizo-gold px-3 py-1 rounded-full text-xs font-bold text-gray-900">
-                RENTRÉE 2024-2025
-              </span>
-              <span className="font-medium">
-                📚 Inscriptions Ouvertes - Rentrée le 15 septembre 2025
-              </span>
-              <Link 
-                href="/pre-inscription"
-                className="bg-white text-epikaizo-red px-4 py-1 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
-              >
-                S'inscrire →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <section className="relative bg-gradient-to-br from-red-50 to-blue-50 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-red-50 to-blue-50 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-[url('/hero-pattern.svg')] bg-repeat opacity-5"></div>
       
@@ -50,10 +27,10 @@ export function Hero() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center px-4 py-2 bg-epikaizo-red text-white rounded-full text-sm font-medium"
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-epikaizo-red to-primary-600 text-white rounded-full text-sm font-medium shadow-lg"
               >
                 <CheckCircle className="h-4 w-4 mr-2" />
-                Formations certifiantes
+                Inscriptions ouvertes • Rentrée 15 septembre 2025
               </motion.div>
               
               <motion.h1
@@ -105,20 +82,20 @@ export function Hero() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Link
+                href="/pre-inscription"
+                className="bg-epikaizo-red text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-all hover:scale-105 inline-flex items-center group shadow-xl"
+              >
+                🎓 S'inscrire Maintenant
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              
+              <Link
                 href="/formations"
-                className="bg-epikaizo-red text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors inline-flex items-center group"
+                className="border-2 border-epikaizo-blue text-epikaizo-blue px-6 py-4 rounded-lg font-medium hover:bg-epikaizo-blue hover:text-white transition-colors inline-flex items-center group"
               >
                 Découvrir nos formations
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              
-              <button
-                onClick={() => setIsVideoPlaying(true)}
-                className="btn-outline btn-lg group"
-              >
-                <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Voir la vidéo
-              </button>
             </motion.div>
 
             {/* Stats */}
@@ -228,7 +205,6 @@ export function Hero() {
         </div>
       )}
     </section>
-    </>
   );
 }
 
