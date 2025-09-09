@@ -173,14 +173,14 @@ export default function TourismePage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-600 to-cyan-700 text-white py-16">
+      <section className="bg-gradient-to-br from-epikaizo-blue to-secondary-600 text-white py-16">
         <div className="container-custom">
           <Breadcrumbs items={breadcrumbItems} className="text-teal-100 mb-6" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center mb-4">
-                <MapPin className="h-12 w-12 text-teal-200 mr-4" />
-                <span className="text-teal-200 font-medium">Formation Spécialisée</span>
+                <MapPin className="h-12 w-12 text-secondary-200 mr-4" />
+                <span className="text-secondary-200 font-medium">Formation Spécialisée</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Tourisme & Hôtelerie
@@ -193,7 +193,7 @@ export default function TourismePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="/pre-inscription"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-teal-700 font-medium rounded-lg hover:bg-gray-100 transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-epikaizo-blue font-medium rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   <GraduationCap className="h-5 w-5 mr-2" />
                   S'inscrire Maintenant

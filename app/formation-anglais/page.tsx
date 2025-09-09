@@ -130,9 +130,9 @@ export default function FormationAnglaisPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-cyan-700 text-white py-16">
+      <section className="bg-gradient-to-br from-epikaizo-blue to-secondary-700 text-white py-16">
         <div className="container-custom">
-          <Breadcrumbs items={breadcrumbItems} className="text-blue-200 mb-6" />
+          <Breadcrumbs items={breadcrumbItems} className="text-secondary-200 mb-6" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center mb-4">

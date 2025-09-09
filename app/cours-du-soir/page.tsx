@@ -94,7 +94,7 @@ export default function CoursduSoirPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-indigo-800 to-purple-900 text-white py-16">
+      <section className="bg-gradient-to-br from-epikaizo-blue to-secondary-800 text-white py-16">
         <div className="container-custom">
           <Breadcrumbs items={breadcrumbItems} className="text-indigo-200 mb-6" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

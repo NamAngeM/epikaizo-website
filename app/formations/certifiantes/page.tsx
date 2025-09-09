@@ -113,14 +113,14 @@ export default function CertifiantesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-emerald-600 to-green-700 text-white py-16">
+      <section className="bg-gradient-to-br from-epikaizo-red to-primary-700 text-white py-16">
         <div className="container-custom">
           <Breadcrumbs items={breadcrumbItems} className="text-emerald-100 mb-6" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center mb-4">
-                <Wrench className="h-12 w-12 text-emerald-200 mr-4" />
-                <span className="text-emerald-200 font-medium">Formations Certifiantes</span>
+                <Wrench className="h-12 w-12 text-primary-200 mr-4" />
+                <span className="text-primary-200 font-medium">Formations Certifiantes</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Formations Techniques Spécialisées
@@ -133,7 +133,7 @@ export default function CertifiantesPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="/pre-inscription"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-emerald-700 font-medium rounded-lg hover:bg-gray-100 transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-epikaizo-red font-medium rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   <GraduationCap className="h-5 w-5 mr-2" />
                   S'inscrire Maintenant

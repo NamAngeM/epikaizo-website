@@ -9,7 +9,30 @@ export function Hero() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
-    <section className="relative bg-gradient-to-br from-red-50 to-blue-50 overflow-hidden">
+    <>
+      {/* Bannière Rentrée Académique */}
+      <div className="bg-gradient-to-r from-epikaizo-red to-primary-600 text-white py-3">
+        <div className="container-custom">
+          <div className="flex items-center justify-center text-center">
+            <div className="flex items-center space-x-4">
+              <span className="bg-epikaizo-gold px-3 py-1 rounded-full text-xs font-bold text-gray-900">
+                RENTRÉE 2024-2025
+              </span>
+              <span className="font-medium">
+                📚 Inscriptions Ouvertes - Rentrée le 15 septembre 2025
+              </span>
+              <Link 
+                href="/pre-inscription"
+                className="bg-white text-epikaizo-red px-4 py-1 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+              >
+                S'inscrire →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <section className="relative bg-gradient-to-br from-red-50 to-blue-50 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-[url('/hero-pattern.svg')] bg-repeat opacity-5"></div>
       
@@ -205,6 +228,7 @@ export function Hero() {
         </div>
       )}
     </section>
+    </>
   );
 }
 

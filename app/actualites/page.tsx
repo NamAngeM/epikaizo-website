@@ -145,9 +145,9 @@ export default function ActualitesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-epikaizo-blue to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-br from-epikaizo-blue to-secondary-700 text-white py-16">
         <div className="container-custom">
-          <Breadcrumbs items={breadcrumbItems} className="text-blue-100 mb-6" />
+          <Breadcrumbs items={breadcrumbItems} className="text-secondary-100 mb-6" />
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Actualités EPIKAÏZO
