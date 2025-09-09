@@ -71,8 +71,9 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-epikaizo-red" />
                 <span className="text-gray-300">
-                  Charbonnage (100mètres du terrain de basket)<br />
-                  Libreville, Gabon
+                  Charbonnage (100m du terrain de basket)<br />
+                  Libreville, Gabon<br />
+                  Alternative : Ancienne Sobraga (en face de l'hôtel l'Excellence)
                 </span>
               </div>
               <div className="flex items-center space-x-3">

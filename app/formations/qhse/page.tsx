@@ -152,14 +152,16 @@ const careers = [
 ];
 
 const sectors = [
-  'Industrie manufacturière',
-  'Secteur pétrolier et chimique',
-  'BTP et construction',
-  'Agroalimentaire',
-  'Collectivités territoriales',
-  'Bureaux d\'études et conseil',
-  'Organismes de contrôle',
-  'Administrations publiques'
+  'Secteur pétrolier gabonais (Total, Perenco, Shell)',
+  'Industrie minière (Comilog, SETRAG)',
+  'BTP et construction (grands projets)',
+  'Industrie forestière et transformation du bois',
+  'Agroalimentaire et agro-industrie',
+  'Collectivités territoriales gabonaises',
+  'Bureaux d\'études et conseil QHSE',
+  'Administrations publiques gabonaises',
+  'Secteur portuaire (Port d\'Owendo)',
+  'Zone Économique Spéciale (GSEZ)'
 ];
 
 const costs = [

@@ -377,18 +377,19 @@ export default function LogistiquePage() {
                 </div>
               </div>
 
-              <div className="bg-orange-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-orange-900 mb-3">
-                  Secteurs d'Activité
+              <div className="bg-red-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-red-900 mb-3">
+                  Secteurs d'Activité au Gabon
                 </h3>
-                <ul className="space-y-2 text-orange-800">
-                  <li>• Transport et logistique</li>
-                  <li>• Distribution et grande distribution</li>
-                  <li>• Industrie manufacturière</li>
-                  <li>• Commerce international</li>
-                  <li>• Secteur pétrolier et énergétique</li>
-                  <li>• Ports et aéroports</li>
-                  <li>• Conseil et audit</li>
+                <ul className="space-y-2 text-red-800">
+                  <li>• Secteur pétrolier (Total Gabon, Perenco)</li>
+                  <li>• Port d'Owendo et logistique maritime</li>
+                  <li>• Zone Économique Spéciale du Gabon (GSEZ)</li>
+                  <li>• Industrie minière (Comilog, SETRAG)</li>
+                  <li>• Grande distribution (Carrefour, Casino)</li>
+                  <li>• Transport routier et ferroviaire</li>
+                  <li>• Commerce international Afrique Centrale</li>
+                  <li>• Secteur forestier et agroalimentaire</li>
                 </ul>
               </div>
             </div>

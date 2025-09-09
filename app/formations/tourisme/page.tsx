@@ -339,17 +339,19 @@ export default function TourismePage() {
                 </div>
               </div>
 
-              <div className="bg-teal-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-teal-900 mb-3">
-                  Secteurs d'Emploi
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-3">
+                  Secteurs d'Emploi au Gabon
                 </h3>
-                <ul className="space-y-2 text-teal-800">
-                  <li>• Hôtels et résidences de tourisme</li>
-                  <li>• Agences de voyage et tour-opérateurs</li>
+                <ul className="space-y-2 text-blue-800">
+                  <li>• Hôtels Libreville (Radisson, Hilton, Onomo)</li>
+                  <li>• Complexes touristiques (Cap Estérias, Pointe-Denis)</li>
+                  <li>• Agences de voyage gabonaises</li>
                   <li>• Restaurants et établissements gastronomiques</li>
-                  <li>• Offices de tourisme et collectivités</li>
-                  <li>• Compagnies de croisière et transport</li>
-                  <li>• Centres de congrès et événementiel</li>
+                  <li>• Office National du Tourisme du Gabon</li>
+                  <li>• Parcs nationaux (Loango, Lopé, Akanda)</li>
+                  <li>• Écotourisme et tourisme durable</li>
+                  <li>• Centres de congrès et événementiel d'entreprise</li>
                 </ul>
               </div>
             </div>

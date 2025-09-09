@@ -213,9 +213,10 @@ export default function AdmissionPage() {
                   </h3>
                 </div>
                 <ul className="space-y-2 text-gray-700">
+                  <li>• Baccalauréat gabonais (toutes séries)</li>
                   <li>• Diplôme d'État (D6) ou équivalent</li>
-                  <li>• Baccalauréat international</li>
-                  <li>• Diplôme étranger reconnu équivalent</li>
+                  <li>• Baccalauréat français ou international</li>
+                  <li>• Diplôme étranger avec équivalence CAMES</li>
                 </ul>
               </div>
 

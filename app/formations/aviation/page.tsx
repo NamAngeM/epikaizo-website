@@ -308,15 +308,17 @@ export default function AviationPage() {
                 </div>
               </div>
 
-              <div className="bg-sky-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-sky-900 mb-3">
-                  Secteurs d'Activité
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-3">
+                  Secteurs d'Activité au Gabon
                 </h3>
-                <ul className="space-y-2 text-sky-800">
-                  <li>• Compagnies aériennes nationales et internationales</li>
-                  <li>• Aéroports et plateformes aéroportuaires</li>
-                  <li>• Sociétés de handling et d'assistance</li>
-                  <li>• Agences de voyage et tour-opérateurs</li>
+                <ul className="space-y-2 text-blue-800">
+                  <li>• Air Gabon et compagnies aériennes régionales</li>
+                  <li>• Aéroport International Léon M'ba (Libreville)</li>
+                  <li>• Aéroports secondaires (Port-Gentil, Franceville)</li>
+                  <li>• Sociétés de handling et services aéroportuaires</li>
+                  <li>• Agences de voyage et tour-opérateurs gabonais</li>
+                  <li>• Secteur pétrolier offshore (transport hélicoptère)</li>
                 </ul>
               </div>
             </div>

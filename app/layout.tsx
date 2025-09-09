@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     default: 'EPIKAIZO UNIVERSITY - Formations Professionnelles d\'Excellence',
     template: '%s | EPIKAIZO UNIVERSITY',
   },
-  description: 'Découvrez nos formations professionnelles d\'excellence en aviation, logistique, tourisme & hôtelerie, QHSE et communication. Let\'s promote excellence - excellence first avec EPIKAIZO UNIVERSITY.',
+  description: 'Premier établissement d\'enseignement supérieur privé au Gabon. Formations d\'excellence en aviation, logistique, tourisme & hôtelerie, QHSE et communication. Let\'s promote excellence - excellence first avec EPIKAIZO UNIVERSITY.',
   keywords: [
     'formation aviation',
     'formation logistique',

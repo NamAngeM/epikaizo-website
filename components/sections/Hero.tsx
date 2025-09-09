@@ -49,9 +49,9 @@ export function Hero() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-xl text-gray-600 leading-relaxed max-w-2xl"
               >
-                Découvrez nos formations professionnelles d'excellence en aviation, 
-                logistique, tourisme & hôtelerie, QHSE et communication. Développez vos compétences 
-                avec des experts reconnus et des partenaires de renom.
+                Premier établissement d'enseignement supérieur privé au Gabon spécialisé en aviation, 
+                logistique, tourisme & hôtelerie, QHSE et communication. Formez-vous avec des experts 
+                reconnus et intégrez le marché de l'emploi gabonais et de l'Afrique Centrale.
               </motion.p>
             </div>
 

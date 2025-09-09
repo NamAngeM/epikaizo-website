@@ -100,12 +100,16 @@ const stats = [
 ];
 
 const partnerships = [
-  'Air Congo - Formation et stages en aviation',
-  'Port Autonome de Pointe-Noire - Logistique portuaire',
-  'Total Energies - Formations QHSE',
-  'Université de Bordeaux - Échanges académiques',
-  'Chamber of Commerce - Développement entrepreneurial',
-  'Ministère de l\'Enseignement Supérieur - Reconnaissance officielle'
+  'Air Gabon - Formation et stages en aviation civile',
+  'Aéroport International Léon M\'ba - Partenariat opérationnel',
+  'Port d\'Owendo - Logistique maritime et portuaire',
+  'Total Gabon - Formations QHSE et sécurité industrielle',
+  'Ministère de l\'Enseignement Supérieur du Gabon - Reconnaissance officielle',
+  'Chambre de Commerce du Gabon - Développement entrepreneurial',
+  'GSEZ (Gabon Special Economic Zone) - Opportunités d\'emploi',
+  'Ethiopian Airlines - Partenariat formation aviation',
+  'Turkish Airlines - Programme d\'échange',
+  'Air France Industries - Formation technique'
 ];
 
 export default function AboutPage() {
