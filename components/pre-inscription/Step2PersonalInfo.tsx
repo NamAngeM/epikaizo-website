@@ -29,8 +29,8 @@ const personalInfoSchema = z.object({
 type PersonalInfoFormData = z.infer<typeof personalInfoSchema>;
 
 const countries = [
-  'France', 'Belgique', 'Suisse', 'Canada', 'Maroc', 'Tunisie', 'Algérie',
-  'Sénégal', 'Côte d\'Ivoire', 'Cameroun', 'Autre'
+  'Gabon', 'France', 'Belgique', 'Suisse', 'Canada', 'Maroc', 'Tunisie', 'Algérie',
+  'Sénégal', 'Côte d\'Ivoire', 'Cameroun', 'République du Congo', 'République Démocratique du Congo', 'Autre'
 ];
 
 export function Step2PersonalInfo({ data, updateData }: Step2PersonalInfoProps) {

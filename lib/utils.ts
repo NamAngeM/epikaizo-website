@@ -6,10 +6,18 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatPrice(price: number, currency: string = 'EUR'): string {
-  return new Intl.NumberFormat('fr-FR', {
-    style: 'currency',
-    currency: currency,
-  }).format(price);
+  try {
+    if (currency === 'FCFA') {
+      return new Intl.NumberFormat('fr-FR').format(price) + ' FCFA';
+    }
+    return new Intl.NumberFormat('fr-FR', {
+      style: 'currency',
+      currency: currency,
+    }).format(price);
+  } catch (error) {
+    // Fallback si la devise n'est pas supportée
+    return new Intl.NumberFormat('fr-FR').format(price) + ' ' + currency;
+  }
 }
 
 export function formatDate(date: string | Date, locale: string = 'fr-FR'): string {

@@ -75,6 +75,7 @@ export function PreInscriptionWizard() {
   const [currentStep, setCurrentStep] = useState(1);
   const [data, setData] = useState<PreInscriptionData>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const updateData = (newData: Partial<PreInscriptionData>) => {
     setData(prev => ({ ...prev, ...newData }));
@@ -98,11 +99,13 @@ export function PreInscriptionWizard() {
 
   const handleSubmit = async () => {
     setIsSubmitting(true);
+    setError(null);
     try {
       // Simuler l'envoi des données
       await new Promise(resolve => setTimeout(resolve, 2000));
       nextStep();
     } catch (error) {
+      setError('Une erreur est survenue lors de l\'inscription. Veuillez réessayer.');
       console.error('Erreur lors de l\'inscription:', error);
     } finally {
       setIsSubmitting(false);
