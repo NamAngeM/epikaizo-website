@@ -118,12 +118,12 @@ const careers = [
 ];
 
 const requirements = [
-  'Copie certifiée du Baccalauréat',
-  'Relevé de notes du Bac',
-  'Extrait d\'acte de naissance',
-  '4 photos d\'identité',
-  'CV et lettre de motivation pour les professionnels',
-  'Certificat de travail (pour les professionnels)'
+  'Fiche d\'inscription',
+  'Bac ou relevé',
+  '4 photos',
+  'Acte de naissance',
+  'Rame de papier',
+  'Papier Hygiénique (9 rouleaux)'
 ];
 
 const programStructure = [
@@ -349,7 +349,27 @@ export default function LogistiquePage() {
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-orange-800">Frais de scolarité annuels</span>
-                      <span className="font-semibold text-orange-900">À confirmer</span>
+                      <span className="font-semibold text-orange-900">1 000 000 FCFA</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-orange-800">Assistance Logistique Aéroportuaire</span>
+                      <span className="font-semibold text-orange-900">1 200 000 FCFA</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-orange-800">Mutuelle et carte d'étudiant</span>
+                      <span className="font-semibold text-orange-900">25 000 FCFA</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-orange-800">Uniforme</span>
+                      <span className="font-semibold text-orange-900">100 000 FCFA</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-orange-800">Catalogue Universitaire</span>
+                      <span className="font-semibold text-orange-900">30 000 FCFA</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-orange-800">Acompte initial ESL</span>
+                      <span className="font-semibold text-orange-900">200 000 FCFA</span>
                     </div>
                   </div>
                 </div>

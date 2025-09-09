@@ -37,7 +37,7 @@ const programs = [
       'Formation sécurité et secourisme'
     ],
     description: 'Formation complète au personnel navigant commercial avec certification officielle.',
-    cost: '1 000 000 FCFA'
+    cost: '1 500 000 FCFA'
   },
   {
     title: 'Agent d\'Escale Commercial',
@@ -47,7 +47,7 @@ const programs = [
       'Formation en billeterie'
     ],
     description: 'Formation complète aux métiers de l\'accueil aéroportuaire et de la gestion des passagers.',
-    cost: '1 000 000 FCFA'
+    cost: '1 500 000 FCFA'
   },
   {
     title: 'Agent Technique d\'Exploitation',
@@ -58,7 +58,7 @@ const programs = [
       'Sécurité aéroportuaire'
     ],
     description: 'Formation aux techniques d\'exploitation et de maintenance aéroportuaire.',
-    cost: '1 100 000 FCFA'
+    cost: '2 000 000 FCFA'
   },
   {
     title: 'Management des Opérations Aéroportuaires',
@@ -69,7 +69,7 @@ const programs = [
       'Trafic aérien'
     ],
     description: 'Formation de niveau supérieur pour la gestion et coordination des opérations aéroportuaires.',
-    cost: '1 200 000 FCFA'
+    cost: '1 500 000 FCFA'
   },
   {
     title: 'Formation Pilote',
@@ -94,14 +94,36 @@ const programs = [
     cost: '1 100 000 FCFA'
   },
   {
-    title: 'Sureté Aéroportuaire',
+    title: 'Hôtesses de Salon d\'Aéroport',
     duration: '6 mois',
     options: [
-      'Contrôle sûreté passagers',
-      'Inspection bagages',
-      'Réglementation sûreté'
+      'Accueil VIP',
+      'Service salon',
+      'Étiquette professionnelle'
     ],
-    description: 'Formation spécialisée en sûreté et sécurité aéroportuaire.',
+    description: 'Formation spécialisée pour l\'accueil dans les salons d\'aéroport.',
+    cost: '800 000 FCFA'
+  },
+  {
+    title: 'Billetterie',
+    duration: '6 mois',
+    options: [
+      'Systèmes de réservation',
+      'Gestion des billets',
+      'Service clientèle'
+    ],
+    description: 'Formation aux métiers de la billetterie aérienne.',
+    cost: '800 000 FCFA'
+  },
+  {
+    title: 'Agent d\'Escale',
+    duration: '6 mois',
+    options: [
+      'Opérations d\'escale',
+      'Gestion des passagers',
+      'Coordination des vols'
+    ],
+    description: 'Formation aux opérations d\'escale aéroportuaire.',
     cost: '800 000 FCFA'
   }
 ];
@@ -116,21 +138,20 @@ const careers = [
 ];
 
 const requirements = [
-  'Copie certifiée du Baccalauréat',
-  'Relevé de notes du Bac',
-  'Extrait d\'acte de naissance',
-  '4 photos d\'identité',
-  'Certificat médical d\'aptitude',
-  'CV et lettre de motivation'
+  'Fiche d\'inscription',
+  'Bac ou relevé',
+  '4 photos',
+  'Acte de naissance',
+  'Rame de papier',
+  'Papier Hygiénique (9 rouleaux)'
 ];
 
 const costs = [
   { item: 'Frais d\'inscription', amount: '100 000 FCFA' },
-  { item: 'Formation niveau Bac/Terminal', amount: '1 000 000 FCFA' },
-  { item: 'Formation niveau supérieur', amount: '1 200 000 FCFA' },
+  { item: 'Mutuelle et carte d\'étudiant', amount: '25 000 FCFA' },
   { item: 'Uniforme', amount: '100 000 FCFA' },
-  { item: 'Uniforme TP et stage', amount: '50 000 FCFA' },
-  { item: 'Acompte à l\'inscription', amount: '600 000 FCFA' }
+  { item: 'Catalogue Universitaire', amount: '30 000 FCFA' },
+  { item: 'Acompte initial Aviation School', amount: '300 000 FCFA' }
 ];
 
 export default function AviationPage() {

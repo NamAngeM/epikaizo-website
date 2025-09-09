@@ -85,19 +85,19 @@ const programs = [
 
 const costs = [
   { item: 'Frais d\'inscription', amount: '100 000 FCFA' },
-  { item: 'Frais de formation', amount: '1 200 000 FCFA' },
-  { item: 'Acompte à l\'inscription', amount: '500 000 FCFA' },
+  { item: 'Mutuelle et carte d\'étudiant', amount: '25 000 FCFA' },
   { item: 'Uniforme', amount: '100 000 FCFA' },
-  { item: 'Uniforme TP', amount: '50 000 FCFA' }
+  { item: 'Catalogue Universitaire', amount: '30 000 FCFA' },
+  { item: 'Acompte initial Aviation School', amount: '300 000 FCFA' }
 ];
 
 const requirements = [
-  'Copie des derniers diplômes',
-  'Relevé de notes',
-  'Extrait d\'acte de naissance',
-  '4 photos d\'identité',
-  'Permis de conduire (pour certaines formations)',
-  'Certificat médical d\'aptitude'
+  'Fiche d\'inscription',
+  'Bac ou relevé',
+  '4 photos',
+  'Acte de naissance',
+  'Rame de papier',
+  'Papier Hygiénique (9 rouleaux)'
 ];
 
 const careers = [

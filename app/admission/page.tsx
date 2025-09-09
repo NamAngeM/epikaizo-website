@@ -238,6 +238,47 @@ export default function AdmissionPage() {
         </div>
       </section>
 
+      {/* Documents Section */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Documents à Fournir
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Pour finaliser votre inscription, veuillez préparer les documents suivants
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gray-50 p-8 rounded-lg">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Documents Obligatoires
+                  </h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Fiche d'inscription</li>
+                    <li>• Bac ou relevé</li>
+                    <li>• 4 photos</li>
+                    <li>• Acte de naissance</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Fournitures Scolaires
+                  </h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Rame de papier</li>
+                    <li>• Papier Hygiénique (9 rouleaux)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-epikaizo-red text-white">
         <div className="container-custom text-center">
