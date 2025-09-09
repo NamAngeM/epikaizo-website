@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les écoles EPIKAIZO UNIVERSITY - Aviation School et École Spécialisée de Logistique. Installations, équipe pédagogique, partenariats.">
+    <meta name="keywords" content="écoles, aviation, logistique, EPIKAIZO UNIVERSITY, installations, équipe pédagogique">
+    <title>Écoles - EPIKAIZO UNIVERSITY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ecoles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-info">
+                    <span><i class="fas fa-envelope"></i> universityepikaizo@gmail.com</span>
+                    <span><i class="fas fa-phone"></i> 076 55 83 38 | 065 12 76 31 | 066 83 85 63</span>
+                </div>
+                <div class="top-bar-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="public/logo-epk.png" alt="EPIKAIZO UNIVERSITY Logo" class="logo">
+                    <div class="logo-content">
+                        <span class="logo-text">EPIKAIZO UNIVERSITY</span>
+                        <span class="logo-subtitle">Excellence First</span>
+                    </div>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="formations.html" class="nav-link">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admissions.html" class="nav-link">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ecoles.html" class="nav-link active">Écoles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <input type="text" id="headerSearchInput" placeholder="Rechercher..." class="search-input">
+                        <button class="search-btn" onclick="globalSearch(document.getElementById('headerSearchInput').value)">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="nav-cta">
+                        <a href="pre-inscription.html" class="btn btn-primary">Pré-inscription</a>
+                    </div>
+                </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html" class="breadcrumb-link">Accueil</a>
+                <span class="breadcrumb-separator">></span>
+                <span class="breadcrumb-current">Écoles</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Nos Écoles</h1>
+            <p class="page-subtitle">Découvrez nos deux écoles spécialisées et leurs installations modernes</p>
+        </div>
+    </section>
+
+    <!-- School Tabs -->
+    <section class="school-tabs">
+        <div class="container">
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="aviation">
+                    <i class="fas fa-plane"></i>
+                    EPIKAIZO Aviation School
+                </button>
+                <button class="tab-btn" data-tab="logistique">
+                    <i class="fas fa-truck"></i>
+                    École Spécialisée de Logistique
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aviation School Tab -->
+    <div id="aviation" class="tab-content active">
+        <!-- School Overview -->
+        <section class="school-overview">
+            <div class="container">
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <h2>EPIKAIZO Aviation School</h2>
+                        <p class="school-description">
+                            Fondée en 2010, EPIKAIZO Aviation School est devenue une référence dans la formation 
+                            aux métiers de l'aviation civile. Notre école forme des professionnels compétents 
+                            pour répondre aux besoins croissants du secteur aéronautique.
+                        </p>
+                        
+                        <div class="school-values">
+                            <h3>Nos Valeurs</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Excellence académique et professionnelle</li>
+                                <li><i class="fas fa-check"></i> Innovation pédagogique constante</li>
+                                <li><i class="fas fa-check"></i> Partenariats avec l'industrie aéronautique</li>
+                                <li><i class="fas fa-check"></i> Formation pratique et théorique équilibrée</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Étudiants formés</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Années d'expérience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Taux d'insertion</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Partenaires entreprises</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Gallery -->
+        <section class="facilities-section">
+            <div class="container">
+                <h2 class="section-title">Installations</h2>
+                <div class="facilities-grid">
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Salles de cours modernes</h3>
+                        <p>Équipées de matériel audiovisuel de pointe et de simulateurs de vol</p>
+                    </div>
+                    
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <h3>Simulateur de vol</h3>
+                        <p>Simulateur professionnel pour la formation pratique des pilotes</p>
+                    </div>
+                    
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Laboratoire informatique</h3>
+                        <p>Ordinateurs équipés de logiciels spécialisés en aviation</p>
+                    </div>
+                    
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Bibliothèque spécialisée</h3>
+                        <p>Plus de 5000 ouvrages et ressources sur l'aviation</p>
+                    </div>
+                    
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Centre de formation pratique</h3>
+                        <p>Espaces dédiés aux exercices pratiques et simulations</p>
+                    </div>
+                    
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>WiFi haut débit</h3>
+                        <p>Connexion internet gratuite dans tous les espaces</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Team -->
+        <section class="team-section">
+            <div class="container">
+                <h2 class="section-title">Équipe Pédagogique</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Dr. Jean-Pierre Martin</h3>
+                        <p class="member-title">Directeur Pédagogique</p>
+                        <p class="member-description">
+                            Ancien pilote de ligne avec 20 ans d'expérience, 
+                            spécialiste en sécurité aérienne.
+                        </p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Marie Dubois</h3>
+                        <p class="member-title">Responsable Formation Hôtesses/Stewards</p>
+                        <p class="member-description">
+                            Ancienne chef de cabine, experte en service client 
+                            et gestion des situations d'urgence.
+                        </p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Pierre Moreau</h3>
+                        <p class="member-title">Instructeur Simulateur</p>
+                        <p class="member-description">
+                            Instructeur certifié, spécialisé dans la formation 
+                            pratique et les procédures de vol.
+                        </p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Sophie Laurent</h3>
+                        <p class="member-title">Responsable Logistique Aéroportuaire</p>
+                        <p class="member-description">
+                            Experte en gestion des opérations aéroportuaires 
+                            et coordination des vols.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnerships -->
+        <section class="partnerships-section">
+            <div class="container">
+                <h2 class="section-title">Partenariats Entreprises</h2>
+                <div class="partnerships-grid">
+                    <div class="partnership-item">
+                        <div class="partner-logo">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Air France</h3>
+                        <p>Partenariat privilégié pour les stages et l'insertion professionnelle</p>
+                    </div>
+                    
+                    <div class="partnership-item">
+                        <div class="partner-logo">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Lufthansa</h3>
+                        <p>Formation spécialisée et échanges internationaux</p>
+                    </div>
+                    
+                    <div class="partnership-item">
+                        <div class="partner-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Aéroports de Paris</h3>
+                        <p>Stages pratiques et formation sur le terrain</p>
+                    </div>
+                    
+                    <div class="partnership-item">
+                        <div class="partner-logo">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>DGAC</h3>
+                        <p>Formation aux réglementations aéronautiques</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Logistique School Tab -->
+    <div id="logistique" class="tab-content">
+        <!-- School Overview -->
+        <section class="school-overview">
+            <div class="container">
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <h2>École Spécialisée de Logistique</h2>
+                        <p class="school-description">
+                            Créée en 2015, notre École Spécialisée de Logistique forme des experts 
+                            en supply chain et gestion logistique. Nous préparons nos étudiants 
+                            aux défis de la logistique moderne et internationale.
+                        </p>
+                        
+                        <div class="school-values">
+                            <h3>Nos Valeurs</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Innovation dans la supply chain</li>
+                                <li><i class="fas fa-check"></i> Approche pratique et terrain</li>
+                                <li><i class="fas fa-check"></i> Vision internationale</li>
+                                <li><i class="fas fa-check"></i> Développement durable</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">300+</div>
+                            <div class="stat-label">Étudiants formés</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">9+</div>
+                            <div class="stat-label">Années d'expérience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">92%</div>
+                            <div class="stat-label">Taux d'insertion</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Partenaires entreprises</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Gallery -->
+        <section class="facilities-section">
+            <div class="container">
+                <h2 class="section-title">Installations</h2>
+                <div class="facilities-grid">
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                        <h3>Entrepôt pédagogique</h3>
+                        <p>Espace de formation pratique avec équipements de stockage réels</p>
+                    </div>
+                    
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Zone de chargement</h3>
+                        <p>Plateforme de chargement pour la formation aux opérations de transport</p>
+                    </div>
+                    
+                    <div class="facility-card">
+                            <div class="facility-image">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Laboratoire informatique</h3>
+                            <p>Logiciels spécialisés en gestion de stock et planification</p>
+                        </div>
+                        
+                        <div class="facility-card">
+                            <div class="facility-image">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Salle d'analyse</h3>
+                            <p>Espace dédié à l'analyse des données logistiques</p>
+                        </div>
+                        
+                        <div class="facility-card">
+                            <div class="facility-image">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <h3>Centre de tri</h3>
+                            <p>Installation de tri et de préparation des commandes</p>
+                        </div>
+                        
+                        <div class="facility-card">
+                            <div class="facility-image">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Espace international</h3>
+                            <p>Formation aux procédures douanières et commerce international</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Team -->
+        <section class="team-section">
+            <div class="container">
+                <h2 class="section-title">Équipe Pédagogique</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Prof. Michel Bernard</h3>
+                        <p class="member-title">Directeur de l'École</p>
+                        <p class="member-description">
+                            Expert en supply chain avec 25 ans d'expérience 
+                            dans l'industrie manufacturière.
+                        </p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Isabelle Rousseau</h3>
+                        <p class="member-title">Responsable Formation Transport</p>
+                        <p class="member-description">
+                            Spécialiste en transport multimodal et 
+                            optimisation des flux logistiques.
+                        </p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Thomas Leroy</h3>
+                        <p class="member-title">Expert en Gestion de Stock</p>
+                        <p class="member-description">
+                            Consultant en optimisation des stocks et 
+                            gestion des approvisionnements.
+                        </p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Nathalie Petit</h3>
+                        <p class="member-title">Responsable Commerce International</p>
+                        <p class="member-description">
+                            Experte en douanes et réglementation 
+                            du commerce international.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnerships -->
+        <section class="partnerships-section">
+            <div class="container">
+                <h2 class="section-title">Partenariats Entreprises</h2>
+                <div class="partnerships-grid">
+                    <div class="partnership-item">
+                        <div class="partner-logo">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Bolloré Logistics</h3>
+                        <p>Partenariat pour les stages et la formation pratique</p>
+                    </div>
+                    
+                    <div class="partnership-item">
+                        <div class="partner-logo">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Geodis</h3>
+                        <p>Formation spécialisée en transport et logistique</p>
+                    </div>
+                    
+                    <div class="partnership-item">
+                        <div class="partner-logo">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                        <h3>Amazon</h3>
+                        <p>Formation aux nouvelles technologies logistiques</p>
+                    </div>
+                    
+                    <div class="partnership-item">
+                        <div class="partner-logo">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>DHL</h3>
+                        <p>Échanges internationaux et formation globale</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Student Life Section -->
+    <section class="student-life-section">
+        <div class="container">
+            <h2 class="section-title">Vie Étudiante</h2>
+            <div class="student-life-content">
+                <div class="life-aspects">
+                    <div class="life-card">
+                        <div class="life-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Associations Étudiantes</h3>
+                        <p>Plus de 10 associations actives : BDE, associations sportives, clubs professionnels</p>
+                    </div>
+                    
+                    <div class="life-card">
+                        <div class="life-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Événements Réguliers</h3>
+                        <p>Conférences, salons professionnels, visites d'entreprises, soirées d'intégration</p>
+                    </div>
+                    
+                    <div class="life-card">
+                        <div class="life-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Témoignages d'Étudiants</h3>
+                        <p>Retours d'expérience de nos anciens étudiants sur leur parcours professionnel</p>
+                    </div>
+                </div>
+                
+                <div class="testimonials">
+                    <h3>Témoignages</h3>
+                    <div class="testimonial-slider">
+                        <div class="testimonial-item active">
+                            <p>"La formation à EPIKAIZO m'a donné toutes les clés pour réussir dans l'aviation. Les enseignants sont excellents et les installations modernes."</p>
+                            <div class="testimonial-author">
+                                <strong>Sarah M.</strong> - Hôtesse de l'air chez Air France
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <p>"L'École de Logistique m'a préparé parfaitement aux défis de la supply chain moderne. Je recommande vivement cette formation."</p>
+                            <div class="testimonial-author">
+                                <strong>Marc L.</strong> - Responsable logistique chez Geodis
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">EPIKAIZO UNIVERSITY</h3>
+                    <p class="footer-description">
+                        LET'S PROMOTE EXCELLENCE - EXCELLENCE FIRST
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Coordonnées</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> universityepikaizo@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        <p><i class="fas fa-phone"></i> +33 1 98 76 54 32</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="ecoles.html">Écoles</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Localisation</h4>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Carte interactive</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 EPIKAIZO UNIVERSITY. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="ecoles.js"></script>
+</body>
+</html>

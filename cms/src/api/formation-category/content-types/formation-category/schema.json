@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formation_categories",
+  "info": {
+    "singularName": "formation-category",
+    "pluralName": "formation-categories",
+    "displayName": "Formation Category",
+    "description": "Catégories de formations"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 100
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "color": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "formations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::formation.formation",
+      "mappedBy": "category"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

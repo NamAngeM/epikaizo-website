@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page non trouvée - EPIKAIZO UNIVERSITY. Cette page n'existe pas. Retournez à l'accueil ou utilisez notre recherche.">
+    <title>Page non trouvée - EPIKAIZO UNIVERSITY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="404.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="public/logo-epk.png" alt="EPIKAIZO UNIVERSITY Logo" class="logo">
+                    <span class="logo-text">EPIKAIZO UNIVERSITY</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="formations.html" class="nav-link">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admissions.html" class="nav-link">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ecoles.html" class="nav-link">Écoles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="phone-numbers">
+                        <span class="phone">+33 1 23 45 67 89</span>
+                        <span class="phone">+33 1 98 76 54 32</span>
+                    </div>
+                    <a href="pre-inscription.html" class="btn btn-primary">Pré-inscription</a>
+                </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 404 Content -->
+    <main class="error-main">
+        <div class="container">
+            <div class="error-content">
+                <!-- Illustration -->
+                <div class="error-illustration">
+                    <div class="error-animation">
+                        <div class="error-number">404</div>
+                        <div class="error-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Error Message -->
+                <div class="error-message">
+                    <h1>Cette page n'existe pas</h1>
+                    <p>Désolé, la page que vous recherchez n'a pas été trouvée. Elle a peut-être été déplacée, supprimée ou l'URL est incorrecte.</p>
+                </div>
+                
+                <!-- Search Box -->
+                <div class="search-section">
+                    <h2>Recherchez ce que vous cherchez</h2>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Tapez votre recherche..." autocomplete="off">
+                        <button class="btn btn-primary" onclick="performSearch()">
+                            <i class="fas fa-search"></i>
+                            Rechercher
+                        </button>
+                    </div>
+                    <div class="search-suggestions" id="search-suggestions">
+                        <h3>Suggestions populaires :</h3>
+                        <div class="suggestion-tags">
+                            <span class="suggestion-tag" onclick="searchFor('formations')">Formations</span>
+                            <span class="suggestion-tag" onclick="searchFor('admissions')">Admissions</span>
+                            <span class="suggestion-tag" onclick="searchFor('aviation')">Aviation</span>
+                            <span class="suggestion-tag" onclick="searchFor('logistique')">Logistique</span>
+                            <span class="suggestion-tag" onclick="searchFor('sciences de gestion')">Sciences de Gestion</span>
+                            <span class="suggestion-tag" onclick="searchFor('contact')">Contact</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="quick-links">
+                    <h2>Liens utiles</h2>
+                    <div class="links-grid">
+                        <a href="index.html" class="quick-link">
+                            <div class="link-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>Accueil</h3>
+                                <p>Retournez à la page d'accueil</p>
+                            </div>
+                        </a>
+                        
+                        <a href="formations.html" class="quick-link">
+                            <div class="link-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>Formations</h3>
+                                <p>Découvrez nos programmes</p>
+                            </div>
+                        </a>
+                        
+                        <a href="admissions.html" class="quick-link">
+                            <div class="link-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>Admissions</h3>
+                                <p>Processus d'inscription</p>
+                            </div>
+                        </a>
+                        
+                        <a href="contact.html" class="quick-link">
+                            <div class="link-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="link-content">
+                                <h3>Contact</h3>
+                                <p>Nous contacter</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-primary btn-large" onclick="goHome()">
+                        <i class="fas fa-home"></i>
+                        Retour à l'accueil
+                    </button>
+                    <button class="btn btn-outline btn-large" onclick="goBack()">
+                        <i class="fas fa-arrow-left"></i>
+                        Page précédente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">EPIKAIZO UNIVERSITY</h3>
+                    <p class="footer-description">
+                        LET'S PROMOTE EXCELLENCE - EXCELLENCE FIRST
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Coordonnées</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> universityepikaizo@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> 076 55 83 38</p>
+                        <p><i class="fas fa-phone"></i> 065 12 76 31</p>
+                        <p><i class="fas fa-phone"></i> 066 83 85 63</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Charbonnages, Paris</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="ecoles.html">Écoles</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Horaires</h4>
+                    <div class="opening-hours">
+                        <p><strong>Lun - Ven :</strong> 8h00 - 18h00</p>
+                        <p><strong>Sam :</strong> 9h00 - 13h00</p>
+                        <p><strong>Dim :</strong> Fermé</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 EPIKAIZO UNIVERSITY. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="404.js"></script>
+</body>
+</html>

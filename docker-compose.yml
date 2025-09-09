@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  # Base de données PostgreSQL
+  postgres:
+    image: postgres:15-alpine
+    container_name: epikaizo-postgres
+    environment:
+      POSTGRES_DB: epikaizo_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - epikaizo-network
+
+  # CMS Strapi
+  strapi:
+    build:
+      context: ./cms
+      dockerfile: Dockerfile
+    container_name: epikaizo-strapi
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_NAME: epikaizo_db
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: password
+      DATABASE_SSL: false
+      HOST: 0.0.0.0
+      PORT: 1337
+      APP_KEYS: your-app-key-1,your-app-key-2
+      ADMIN_JWT_SECRET: your-admin-jwt-secret
+      API_TOKEN_SALT: your-api-token-salt
+      TRANSFER_TOKEN_SALT: your-transfer-token-salt
+    ports:
+      - "1337:1337"
+    depends_on:
+      - postgres
+    volumes:
+      - strapi_uploads:/opt/app/public/uploads
+    networks:
+      - epikaizo-network
+
+  # Frontend Next.js
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: epikaizo-frontend
+    environment:
+      NEXT_PUBLIC_SITE_URL: http://localhost:3000
+      NEXT_PUBLIC_SITE_NAME: EPIKAIZO
+      STRAPI_URL: http://strapi:1337
+      DATABASE_URL: postgresql://postgres:password@postgres:5432/epikaizo_db
+    ports:
+      - "3000:3000"
+    depends_on:
+      - strapi
+    networks:
+      - epikaizo-network
+
+volumes:
+  postgres_data:
+  strapi_uploads:
+
+networks:
+  epikaizo-network:
+    driver: bridge

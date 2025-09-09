@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez toutes nos formations à EPIKAIZO UNIVERSITY - Aviation, Logistique, Sciences de gestion, Formations certifiantes. DUT, Licence, Certification.">
+    <meta name="keywords" content="formations, aviation, logistique, sciences de gestion, DUT, licence, certification, EPIKAIZO UNIVERSITY">
+    <title>Formations - EPIKAIZO UNIVERSITY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-info">
+                    <span><i class="fas fa-envelope"></i> universityepikaizo@gmail.com</span>
+                    <span><i class="fas fa-phone"></i> 076 55 83 38 | 065 12 76 31 | 066 83 85 63</span>
+                </div>
+                <div class="top-bar-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="public/logo-epk.png" alt="EPIKAIZO UNIVERSITY Logo" class="logo">
+                    <div class="logo-content">
+                        <span class="logo-text">EPIKAIZO UNIVERSITY</span>
+                        <span class="logo-subtitle">Excellence First</span>
+                    </div>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="formations.html" class="nav-link active">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admissions.html" class="nav-link">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ecoles.html" class="nav-link">Écoles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <input type="text" id="headerSearchInput" placeholder="Rechercher..." class="search-input">
+                        <button class="search-btn" onclick="globalSearch(document.getElementById('headerSearchInput').value)">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="nav-cta">
+                        <a href="pre-inscription.html" class="btn btn-primary">Pré-inscription</a>
+                    </div>
+                </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html" class="breadcrumb-link">Accueil</a>
+                <span class="breadcrumb-separator">></span>
+                <span class="breadcrumb-current">Formations</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Nos Formations</h1>
+            <p class="page-subtitle">Découvrez notre offre de formations professionnelles dans l'aviation, la logistique et les sciences de gestion</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <h3 class="filters-title">Filtrer les formations</h3>
+                
+                <div class="filters-grid">
+                    <!-- Domaine Filter -->
+                    <div class="filter-group">
+                        <label class="filter-label">Par domaine</label>
+                        <select class="filter-select" id="domaine-filter">
+                            <option value="">Tous les domaines</option>
+                            <option value="aviation">Aviation</option>
+                            <option value="logistique">Logistique</option>
+                            <option value="sciences-gestion">Sciences de gestion</option>
+                            <option value="certifiantes">Formations certifiantes</option>
+                        </select>
+                    </div>
+
+                    <!-- Diplôme Filter -->
+                    <div class="filter-group">
+                        <label class="filter-label">Par diplôme</label>
+                        <select class="filter-select" id="diplome-filter">
+                            <option value="">Tous les diplômes</option>
+                            <option value="dut">DUT</option>
+                            <option value="licence">Licence</option>
+                            <option value="certification">Certification</option>
+                        </select>
+                    </div>
+
+                    <!-- Durée Filter -->
+                    <div class="filter-group">
+                        <label class="filter-label">Par durée</label>
+                        <select class="filter-select" id="duree-filter">
+                            <option value="">Toutes les durées</option>
+                            <option value="6-mois">6 mois</option>
+                            <option value="2-ans">2 ans</option>
+                            <option value="3-ans">3 ans</option>
+                        </select>
+                    </div>
+
+                    <!-- Reset Button -->
+                    <div class="filter-group">
+                        <button class="btn btn-outline" id="reset-filters">Réinitialiser</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formations List -->
+    <section class="formations-list">
+        <div class="container">
+            <div class="formations-grid" id="formations-grid">
+                
+                <!-- Sciences de Gestion (DUT) -->
+                <div class="formation-card" data-domaine="sciences-gestion" data-diplome="dut" data-duree="2-ans">
+                    <div class="formation-image">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="formation-badge">DUT</div>
+                    </div>
+                    <div class="formation-content">
+                        <h3 class="formation-title">Sciences de Gestion</h3>
+                        <div class="formation-meta">
+                            <span class="formation-diplome">DUT</span>
+                            <span class="formation-duree">2 ans</span>
+                        </div>
+                        <p class="formation-description">
+                            Formation diplômante préparant aux métiers de la gestion d'entreprise avec plusieurs spécialisations professionnelles.
+                        </p>
+                        <div class="formation-details">
+                            <div class="formation-price">
+                                <span class="price-label">Frais de scolarité annuels:</span>
+                                <span class="price-value">850 000 FCFA</span>
+                            </div>
+                            <div class="formation-inscription">
+                                <span class="inscription-label">Frais d'inscription:</span>
+                                <span class="inscription-value">100 000 FCFA</span>
+                            </div>
+                        </div>
+                        <div class="formation-specializations">
+                            <span class="specialization-tag">QHSE</span>
+                            <span class="specialization-tag">RH</span>
+                            <span class="specialization-tag">Commerce International</span>
+                            <span class="specialization-tag">Marketing Digital</span>
+                        </div>
+                        <button class="btn btn-primary formation-btn" onclick="openFormationDetails('sciences-gestion')">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Aviation Civile -->
+                <div class="formation-card" data-domaine="aviation" data-diplome="certification" data-duree="6-mois">
+                    <div class="formation-image">
+                        <i class="fas fa-plane"></i>
+                        <div class="formation-badge">Certification</div>
+                    </div>
+                    <div class="formation-content">
+                        <h3 class="formation-title">Aviation Civile</h3>
+                        <div class="formation-meta">
+                            <span class="formation-diplome">Certification</span>
+                            <span class="formation-duree">6-24 mois</span>
+                        </div>
+                        <p class="formation-description">
+                            Formations spécialisées aux métiers de l'aviation civile, de l'accueil à la gestion des opérations aéroportuaires.
+                        </p>
+                        <div class="formation-details">
+                            <div class="formation-price">
+                                <span class="price-label">Frais de formation:</span>
+                                <span class="price-value">1 000 000 - 1 200 000 FCFA</span>
+                            </div>
+                            <div class="formation-inscription">
+                                <span class="inscription-label">Frais d'inscription:</span>
+                                <span class="inscription-value">100 000 FCFA</span>
+                            </div>
+                        </div>
+                        <div class="formation-specializations">
+                            <span class="specialization-tag">Agent d'escale</span>
+                            <span class="specialization-tag">Hôtesse/Steward</span>
+                            <span class="specialization-tag">Management aéroportuaire</span>
+                        </div>
+                        <button class="btn btn-primary formation-btn" onclick="openFormationDetails('aviation')">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Formations Certifiantes -->
+                <div class="formation-card" data-domaine="certifiantes" data-diplome="certification" data-duree="6-mois">
+                    <div class="formation-image">
+                        <i class="fas fa-certificate"></i>
+                        <div class="formation-badge new">Nouveau</div>
+                    </div>
+                    <div class="formation-content">
+                        <h3 class="formation-title">Formations Certifiantes</h3>
+                        <div class="formation-meta">
+                            <span class="formation-diplome">Certification</span>
+                            <span class="formation-duree">6 mois</span>
+                        </div>
+                        <p class="formation-description">
+                            Programmes intensifs de spécialisation technique dans les métiers de l'aviation et de la logistique aéroportuaire.
+                        </p>
+                        <div class="formation-details">
+                            <div class="formation-price">
+                                <span class="price-label">Frais de formation:</span>
+                                <span class="price-value">1 200 000 FCFA</span>
+                            </div>
+                            <div class="formation-inscription">
+                                <span class="inscription-label">Acompte:</span>
+                                <span class="inscription-value">500 000 FCFA</span>
+                            </div>
+                        </div>
+                        <div class="formation-specializations">
+                            <span class="specialization-tag">Traitement bagages</span>
+                            <span class="specialization-tag">Conduite engins</span>
+                            <span class="specialization-tag">Marchalling</span>
+                        </div>
+                        <button class="btn btn-primary formation-btn" onclick="openFormationDetails('certifiantes')">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+
+                <!-- École Spécialisée de Logistique -->
+                <div class="formation-card" data-domaine="logistique" data-diplome="licence" data-duree="3-ans">
+                    <div class="formation-image">
+                        <i class="fas fa-truck"></i>
+                        <div class="formation-badge">Licence</div>
+                    </div>
+                    <div class="formation-content">
+                        <h3 class="formation-title">École Spécialisée de Logistique</h3>
+                        <div class="formation-meta">
+                            <span class="formation-diplome">Licence</span>
+                            <span class="formation-duree">3 ans</span>
+                        </div>
+                        <p class="formation-description">
+                            Formation diplômante de niveau Licence dans le domaine de la logistique avec différentes spécialisations sectorielles.
+                        </p>
+                        <div class="formation-details">
+                            <div class="formation-price">
+                                <span class="price-label">Frais de scolarité annuels:</span>
+                                <span class="price-value">À confirmer</span>
+                            </div>
+                            <div class="formation-inscription">
+                                <span class="inscription-label">Frais d'inscription:</span>
+                                <span class="inscription-value">100 000 FCFA</span>
+                            </div>
+                        </div>
+                        <div class="formation-specializations">
+                            <span class="specialization-tag">Logistique pétrolière</span>
+                            <span class="specialization-tag">Logistique aéroportuaire</span>
+                            <span class="specialization-tag">Logistique maritime</span>
+                        </div>
+                        <button class="btn btn-primary formation-btn" onclick="openFormationDetails('logistique')">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Formation en Anglais Intensif -->
+                <div class="formation-card" data-domaine="certifiantes" data-diplome="certification" data-duree="6-mois">
+                    <div class="formation-image">
+                        <i class="fas fa-language"></i>
+                        <div class="formation-badge">Spécial</div>
+                    </div>
+                    <div class="formation-content">
+                        <h3 class="formation-title">Formation en Anglais Intensif</h3>
+                        <div class="formation-meta">
+                            <span class="formation-diplome">Certification</span>
+                            <span class="formation-duree">Variable</span>
+                        </div>
+                        <p class="formation-description">
+                            Programme de renforcement linguistique et préparation aux environnements professionnels internationaux.
+                        </p>
+                        <div class="formation-details">
+                            <div class="formation-price">
+                                <span class="price-label">Frais de formation:</span>
+                                <span class="price-value">Sur demande</span>
+                            </div>
+                            <div class="formation-inscription">
+                                <span class="inscription-label">Frais d'inscription:</span>
+                                <span class="inscription-value">100 000 FCFA</span>
+                            </div>
+                        </div>
+                        <div class="formation-specializations">
+                            <span class="specialization-tag">Anglais professionnel</span>
+                            <span class="specialization-tag">Environnement international</span>
+                        </div>
+                        <button class="btn btn-primary formation-btn" onclick="openFormationDetails('anglais')">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Stages Offerts -->
+                <div class="formation-card" data-domaine="certifiantes" data-diplome="certification" data-duree="6-mois">
+                    <div class="formation-image">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="formation-badge">Stage</div>
+                    </div>
+                    <div class="formation-content">
+                        <h3 class="formation-title">Stages Offerts</h3>
+                        <div class="formation-meta">
+                            <span class="formation-diplome">Stage</span>
+                            <span class="formation-duree">Variable</span>
+                        </div>
+                        <p class="formation-description">
+                            Intégration dans le parcours de formation avec partenariats entreprises et convention de stage fournie.
+                        </p>
+                        <div class="formation-details">
+                            <div class="formation-price">
+                                <span class="price-label">Gratuit</span>
+                                <span class="price-value">Inclus dans la formation</span>
+                            </div>
+                            <div class="formation-inscription">
+                                <span class="inscription-label">Convention:</span>
+                                <span class="inscription-value">Fournie par l'école</span>
+                            </div>
+                        </div>
+                        <div class="formation-specializations">
+                            <span class="specialization-tag">Partenariats entreprises</span>
+                            <span class="specialization-tag">Convention de stage</span>
+                        </div>
+                        <button class="btn btn-primary formation-btn" onclick="openFormationDetails('stages')">
+                            Détails
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Informative Section -->
+    <section class="informative-section">
+        <div class="container">
+            <div class="informative-content">
+                <div class="informative-text">
+                    <h3 class="informative-title">Vous ne trouvez pas votre formation ?</h3>
+                    <p class="informative-description">
+                        Notre équipe pédagogique peut vous aider à identifier la formation qui correspond le mieux à vos objectifs professionnels. 
+                        Contactez-nous pour un conseil personnalisé.
+                    </p>
+                </div>
+                <div class="informative-action">
+                    <button class="btn btn-primary btn-large" onclick="scrollToContact()">
+                        Contactez-nous
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">EPIKAIZO UNIVERSITY</h3>
+                    <p class="footer-description">
+                        LET'S PROMOTE EXCELLENCE - EXCELLENCE FIRST
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Coordonnées</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> universityepikaizo@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        <p><i class="fas fa-phone"></i> +33 1 98 76 54 32</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#ecoles">Écoles</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Localisation</h4>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Carte interactive</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 EPIKAIZO UNIVERSITY. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Formation Details Modal -->
+    <div id="formation-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="formations.js"></script>
+</body>
+</html>

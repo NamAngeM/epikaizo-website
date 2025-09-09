@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Processus d'admission à EPIKAIZO UNIVERSITY - Découvrez les étapes, documents requis, frais de scolarité et formulaire de pré-inscription.">
+    <meta name="keywords" content="admission, inscription, EPIKAIZO UNIVERSITY, processus, documents, frais de scolarité">
+    <title>Admissions - EPIKAIZO UNIVERSITY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admissions.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-info">
+                    <span><i class="fas fa-envelope"></i> universityepikaizo@gmail.com</span>
+                    <span><i class="fas fa-phone"></i> 076 55 83 38 | 065 12 76 31 | 066 83 85 63</span>
+                </div>
+                <div class="top-bar-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="public/logo-epk.png" alt="EPIKAIZO UNIVERSITY Logo" class="logo">
+                    <div class="logo-content">
+                        <span class="logo-text">EPIKAIZO UNIVERSITY</span>
+                        <span class="logo-subtitle">Excellence First</span>
+                    </div>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="formations.html" class="nav-link">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admissions.html" class="nav-link active">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ecoles.html" class="nav-link">Écoles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <input type="text" id="headerSearchInput" placeholder="Rechercher..." class="search-input">
+                        <button class="search-btn" onclick="globalSearch(document.getElementById('headerSearchInput').value)">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="nav-cta">
+                        <a href="pre-inscription.html" class="btn btn-primary">Pré-inscription</a>
+                    </div>
+                </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html" class="breadcrumb-link">Accueil</a>
+                <span class="breadcrumb-separator">></span>
+                <span class="breadcrumb-current">Admissions</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Processus d'Admission</h1>
+            <p class="page-subtitle">Découvrez les étapes pour intégrer EPIKAIZO UNIVERSITY et commencez votre parcours d'excellence</p>
+        </div>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">Processus en 5 étapes</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>1. Choix de la formation</h3>
+                        <p>Explorez nos formations et choisissez celle qui correspond à vos objectifs professionnels</p>
+                        <ul>
+                            <li>Consultation des programmes disponibles</li>
+                            <li>Rencontre avec nos conseillers pédagogiques</li>
+                            <li>Visite des installations (optionnelle)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>2. Dossier de candidature</h3>
+                        <p>Préparez et soumettez votre dossier de candidature complet</p>
+                        <ul>
+                            <li>Remplissage du formulaire de candidature</li>
+                            <li>Collecte des documents requis</li>
+                            <li>Envoi du dossier avant la date limite</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>3. Entretien</h3>
+                        <p>Passez un entretien de motivation avec notre équipe pédagogique</p>
+                        <ul>
+                            <li>Évaluation de votre motivation</li>
+                            <li>Discussion sur vos objectifs professionnels</li>
+                            <li>Présentation de votre projet de formation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>4. Réponse</h3>
+                        <p>Recevez la réponse d'admission dans les délais convenus</p>
+                        <ul>
+                            <li>Notification par email et courrier</li>
+                            <li>Détails des conditions d'admission</li>
+                            <li>Informations sur la suite du processus</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>5. Inscription définitive</h3>
+                        <p>Finalisez votre inscription et préparez votre rentrée</p>
+                        <ul>
+                            <li>Paiement des frais d'inscription</li>
+                            <li>Signature du contrat de formation</li>
+                            <li>Réception des informations pratiques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Required Documents -->
+    <section class="documents-section">
+        <div class="container">
+            <h2 class="section-title">Documents Requis</h2>
+            <div class="documents-content">
+                <div class="documents-list">
+                    <h3>Liste des documents à fournir</h3>
+                    <div class="documents-grid">
+                        <label class="document-item">
+                            <input type="checkbox" class="document-checkbox">
+                            <span class="checkmark"></span>
+                            <span class="document-text">Copie certifiée du Baccalauréat</span>
+                        </label>
+                        
+                        <label class="document-item">
+                            <input type="checkbox" class="document-checkbox">
+                            <span class="checkmark"></span>
+                            <span class="document-text">Relevé de notes du Bac</span>
+                        </label>
+                        
+                        <label class="document-item">
+                            <input type="checkbox" class="document-checkbox">
+                            <span class="checkmark"></span>
+                            <span class="document-text">Extrait d'acte de naissance</span>
+                        </label>
+                        
+                        <label class="document-item">
+                            <input type="checkbox" class="document-checkbox">
+                            <span class="checkmark"></span>
+                            <span class="document-text">4 photos d'identité</span>
+                        </label>
+                        
+                        <label class="document-item">
+                            <input type="checkbox" class="document-checkbox">
+                            <span class="checkmark"></span>
+                            <span class="document-text">2 rames de papier</span>
+                        </label>
+                        
+                        <label class="document-item">
+                            <input type="checkbox" class="document-checkbox">
+                            <span class="checkmark"></span>
+                            <span class="document-text">9 rouleaux de papier hygiénique</span>
+                        </label>
+                        
+                        <label class="document-item">
+                            <input type="checkbox" class="document-checkbox">
+                            <span class="checkmark"></span>
+                            <span class="document-text">Chemise cartonnée</span>
+                        </label>
+                    </div>
+                    
+                    <div class="documents-actions">
+                        <button class="btn btn-outline" id="download-list">
+                            <i class="fas fa-download"></i>
+                            Télécharger la liste
+                        </button>
+                        <button class="btn btn-primary" id="check-all">
+                            <i class="fas fa-check-double"></i>
+                            Tout cocher
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="documents-info">
+                    <div class="info-card">
+                        <h4>Conseils pratiques</h4>
+                        <ul>
+                            <li>Vérifiez que tous les documents sont lisibles</li>
+                            <li>Les copies doivent être certifiées conformes</li>
+                            <li>Respectez les formats demandés</li>
+                            <li>Gardez des copies pour vos archives</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4>Délais</h4>
+                        <p>Dossier à déposer avant le <strong>30 juin 2025</strong></p>
+                        <p>Réponse sous <strong>15 jours</strong> après réception</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tuition Fees -->
+    <section class="tuition-section">
+        <div class="container">
+            <h2 class="section-title">Frais de Scolarité</h2>
+            <div class="tuition-content">
+                <div class="tuition-table">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Formation</th>
+                                <th>Frais d'inscription</th>
+                                <th>Coût total</th>
+                                <th>Acompte requis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sciences de Gestion (DUT)</td>
+                                <td>100 000 FCFA</td>
+                                <td>1 800 000 FCFA</td>
+                                <td>500 000 FCFA</td>
+                            </tr>
+                            <tr>
+                                <td>Aviation Civile</td>
+                                <td>100 000 FCFA</td>
+                                <td>1 200 000 FCFA</td>
+                                <td>500 000 FCFA</td>
+                            </tr>
+                            <tr>
+                                <td>Formations Certifiantes</td>
+                                <td>100 000 FCFA</td>
+                                <td>1 200 000 FCFA</td>
+                                <td>500 000 FCFA</td>
+                            </tr>
+                            <tr>
+                                <td>École de Logistique (Licence)</td>
+                                <td>100 000 FCFA</td>
+                                <td>À confirmer</td>
+                                <td>500 000 FCFA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="tuition-info">
+                    <div class="warning-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Important</h4>
+                        <p>Les frais d'inscription et de scolarité ne sont ni remboursables ni transférables</p>
+                    </div>
+                    
+                    <div class="payment-options">
+                        <h4>Options de paiement</h4>
+                        <ul>
+                            <li><i class="fas fa-credit-card"></i> Paiement échelonné disponible</li>
+                            <li><i class="fas fa-handshake"></i> Bourses d'études sur critères</li>
+                            <li><i class="fas fa-building"></i> Financement entreprise</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-registration Form -->
+    <section class="preregistration-section">
+        <div class="container">
+            <h2 class="section-title">Formulaire de Pré-inscription</h2>
+            <div class="form-container">
+                <form class="preregistration-form" id="preregistration-form">
+                    <div class="form-group">
+                        <label for="lastname">Nom *</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="firstname">Prénom *</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Téléphone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="formation">Formation souhaitée *</label>
+                        <select id="formation" name="formation" required>
+                            <option value="">Sélectionnez une formation</option>
+                            <option value="sciences-gestion">Sciences de Gestion (DUT)</option>
+                            <option value="aviation">Aviation Civile</option>
+                            <option value="certifiantes">Formations Certifiantes</option>
+                            <option value="logistique">École de Logistique (Licence)</option>
+                            <option value="anglais">Formation en Anglais Intensif</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message (optionnel)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet professionnel ou posez vos questions..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="conditions" name="conditions" required>
+                            <span class="checkmark"></span>
+                            J'accepte les <a href="#" class="link">conditions générales</a> et la <a href="#" class="link">politique de confidentialité</a> *
+                        </label>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            Je souhaite recevoir des informations sur les formations et événements
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer ma pré-inscription
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">EPIKAIZO UNIVERSITY</h3>
+                    <p class="footer-description">
+                        LET'S PROMOTE EXCELLENCE - EXCELLENCE FIRST
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Coordonnées</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> universityepikaizo@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        <p><i class="fas fa-phone"></i> +33 1 98 76 54 32</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="ecoles.html">Écoles</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Localisation</h4>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Carte interactive</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 EPIKAIZO UNIVERSITY. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="admissions.js"></script>
+</body>
+</html>

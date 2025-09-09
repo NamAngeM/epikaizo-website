@@ -1,0 +1,130 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formations",
+  "info": {
+    "singularName": "formation",
+    "pluralName": "formations",
+    "displayName": "Formation",
+    "description": "Formations professionnelles proposées par EPIKAIZO"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::formation-category.formation-category",
+      "inversedBy": "formations"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": ["debutant", "intermediaire", "avance", "expert"],
+      "required": true
+    },
+    "duration": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "currency": {
+      "type": "string",
+      "default": "EUR",
+      "maxLength": 3
+    },
+    "language": {
+      "type": "string",
+      "default": "fr",
+      "maxLength": 5
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "maxStudents": {
+      "type": "integer",
+      "default": 20,
+      "min": 1
+    },
+    "currentStudents": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "isOnline": {
+      "type": "boolean",
+      "default": false
+    },
+    "isInPerson": {
+      "type": "boolean",
+      "default": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "prerequisites": {
+      "type": "json"
+    },
+    "objectives": {
+      "type": "json"
+    },
+    "program": {
+      "type": "json"
+    },
+    "instructor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::instructor.instructor"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "documents": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["files"]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

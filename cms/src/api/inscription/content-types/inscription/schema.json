@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inscriptions",
+  "info": {
+    "singularName": "inscription",
+    "pluralName": "inscriptions",
+    "displayName": "Inscription",
+    "description": "Inscriptions aux formations"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "formation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::formation.formation",
+      "required": true
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["pending", "confirmed", "cancelled", "completed"],
+      "default": "pending"
+    },
+    "paymentStatus": {
+      "type": "enumeration",
+      "enum": ["pending", "partial", "paid", "refunded"],
+      "default": "pending"
+    },
+    "paymentMethod": {
+      "type": "string"
+    },
+    "totalAmount": {
+      "type": "decimal",
+      "min": 0
+    },
+    "paidAmount": {
+      "type": "decimal",
+      "min": 0,
+      "default": 0
+    },
+    "notes": {
+      "type": "text"
+    },
+    "confirmationNumber": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}
