@@ -63,9 +63,9 @@ export function Hero() {
               className="grid grid-cols-1 sm:grid-cols-3 gap-4"
             >
               {[
-                { icon: EpikaizoIcons.Graduation, text: 'Formations certifiantes', color: 'blue' },
-                { icon: EpikaizoIcons.Students, text: 'Experts reconnus', color: 'green' },
-                { icon: EpikaizoIcons.Briefcase, text: 'Insertion professionnelle', color: 'purple' },
+                { icon: EpikaizoIcons.Graduation, text: 'Formations certifiantes', color: 'primary' },
+                { icon: EpikaizoIcons.Students, text: 'Experts reconnus', color: 'success' },
+                { icon: EpikaizoIcons.Briefcase, text: 'Insertion professionnelle', color: 'secondary' },
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <div className="p-2 rounded-lg bg-gray-50">
