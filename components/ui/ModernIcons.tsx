@@ -35,7 +35,8 @@ import {
   Facebook,
   Twitter,
   Linkedin,
-  Instagram
+  Instagram,
+  Play
 } from 'lucide-react';
 
 // Icônes modernes avec variantes
@@ -132,6 +133,9 @@ export const EpikaizoIcons = {
   Twitter: (props: Omit<ModernIconProps, 'icon'>) => <ModernIcon icon={Twitter} {...props} />,
   Linkedin: (props: Omit<ModernIconProps, 'icon'>) => <ModernIcon icon={Linkedin} {...props} />,
   Instagram: (props: Omit<ModernIconProps, 'icon'>) => <ModernIcon icon={Instagram} {...props} />,
+
+  // Media
+  Play: (props: Omit<ModernIconProps, 'icon'>) => <ModernIcon icon={Play} {...props} />,
 
   // Spéciales
   Target: (props: Omit<ModernIconProps, 'icon'>) => <ModernIcon icon={Target} {...props} />,

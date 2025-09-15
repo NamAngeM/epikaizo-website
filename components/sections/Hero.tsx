@@ -142,7 +142,7 @@ export function Hero() {
                     onClick={() => setIsVideoPlaying(true)}
                     className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors group"
                   >
-                    <Play className="h-8 w-8 text-primary-600 ml-1 group-hover:scale-110 transition-transform" />
+                    <EpikaizoIcons.Play size="xl" color="primary" className="ml-1 group-hover:scale-110 transition-transform" />
                   </button>
                 </div>
               )}
