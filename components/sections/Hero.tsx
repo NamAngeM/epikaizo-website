@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, Play, CheckCircle } from 'lucide-react';
+import { EpikaizoIcons } from '@/components/ui/ModernIcons';
 import { motion } from 'framer-motion';
 
 export function Hero() {
@@ -29,7 +29,7 @@ export function Hero() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-epikaizo-red to-primary-600 text-white rounded-full text-sm font-medium shadow-lg"
               >
-                <CheckCircle className="h-4 w-4 mr-2" />
+                <EpikaizoIcons.CheckCircle size="sm" color="white" className="mr-2" />
                 Inscriptions ouvertes • Rentrée 15 septembre 2025
               </motion.div>
               
@@ -63,12 +63,14 @@ export function Hero() {
               className="grid grid-cols-1 sm:grid-cols-3 gap-4"
             >
               {[
-                { icon: '🎓', text: 'Formations certifiantes' },
-                { icon: '👨‍🏫', text: 'Experts reconnus' },
-                { icon: '💼', text: 'Insertion professionnelle' },
+                { icon: EpikaizoIcons.Graduation, text: 'Formations certifiantes', color: 'blue' },
+                { icon: EpikaizoIcons.Students, text: 'Experts reconnus', color: 'green' },
+                { icon: EpikaizoIcons.Briefcase, text: 'Insertion professionnelle', color: 'purple' },
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <span className="text-2xl">{feature.icon}</span>
+                  <div className="p-2 rounded-lg bg-gray-50">
+                    <feature.icon size="md" color={feature.color} animated />
+                  </div>
                   <span className="text-gray-700 font-medium">{feature.text}</span>
                 </div>
               ))}
@@ -85,8 +87,9 @@ export function Hero() {
                 href="/pre-inscription"
                 className="bg-epikaizo-red text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-all hover:scale-105 inline-flex items-center group shadow-xl"
               >
-                🎓 S'inscrire Maintenant
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <EpikaizoIcons.Graduation size="lg" color="white" className="mr-2" />
+                S'inscrire Maintenant
+                <EpikaizoIcons.ArrowRight size="lg" color="white" className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
               
               <Link
@@ -94,7 +97,7 @@ export function Hero() {
                 className="border-2 border-epikaizo-blue text-epikaizo-blue px-6 py-4 rounded-lg font-medium hover:bg-epikaizo-blue hover:text-white transition-colors inline-flex items-center group"
               >
                 Découvrir nos formations
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <EpikaizoIcons.ArrowRight size="lg" color="primary" className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
 
@@ -154,7 +157,7 @@ export function Hero() {
             >
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <CheckCircle className="h-6 w-6 text-green-600" />
+                  <EpikaizoIcons.CheckCircle size="xl" color="success" />
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Certification garantie</div>
@@ -171,7 +174,7 @@ export function Hero() {
             >
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-bold">👨‍🏫</span>
+                  <EpikaizoIcons.Students size="xl" color="primary" />
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Experts reconnus</div>

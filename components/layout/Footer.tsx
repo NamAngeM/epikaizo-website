@@ -1,5 +1,20 @@
 import Link from 'next/link';
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { 
+  Facebook, 
+  Twitter, 
+  Linkedin, 
+  Instagram, 
+  Mail, 
+  Phone, 
+  MapPin,
+  Globe,
+  Clock,
+  User,
+  Award,
+  GraduationCap,
+  Building,
+  Heart
+} from 'lucide-react';
 
 const footerNavigation = {
   formations: [

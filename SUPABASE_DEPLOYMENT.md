@@ -177,7 +177,8 @@ https://your-project.supabase.co/
 
 #### **Updates :**
 - Push vers la branche main pour redéployer
-- Déploiement automatique configuré
+- Déploiement automatique configuré.
+npm
 
 #### **Base de Données :**
 - Utilisez l'interface Supabase pour gérer les données

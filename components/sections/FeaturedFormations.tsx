@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Clock, Users, MapPin, ArrowRight, Star } from 'lucide-react';
+import { EpikaizoIcons } from '@/components/ui/ModernIcons';
 import { motion } from 'framer-motion';
 import { Formation } from '@/types';
 import { formatPrice, formatDate, getFormationLevelLabel } from '@/lib/utils';
@@ -21,7 +21,7 @@ const mockFormations: Formation[] = [
       name: 'Aviation',
       slug: 'aviation',
       description: 'Formations en aviation',
-      icon: '✈️',
+      icon: EpikaizoIcons.Aviation,
       color: 'blue',
     },
     level: 'intermediaire',
@@ -67,7 +67,7 @@ const mockFormations: Formation[] = [
       name: 'Logistique',
       slug: 'logistique',
       description: 'Formations en logistique',
-      icon: '📦',
+      icon: EpikaizoIcons.Logistique,
       color: 'red',
     },
     level: 'debutant',
@@ -113,7 +113,7 @@ const mockFormations: Formation[] = [
       name: 'Sciences de Gestion',
       slug: 'gestion',
       description: 'Formations en sciences de gestion',
-      icon: '📊',
+      icon: EpikaizoIcons.Gestion,
       color: 'blue',
     },
     level: 'debutant',
@@ -159,7 +159,7 @@ const mockFormations: Formation[] = [
       name: 'Formations Certifiantes',
       slug: 'certifiantes',
       description: 'Formations techniques courtes',
-      icon: '🔧',
+      icon: EpikaizoIcons.Certifiantes,
       color: 'red',
     },
     level: 'debutant',
@@ -252,7 +252,9 @@ export function FeaturedFormations() {
               {/* Image */}
               <div className="relative h-48 bg-gradient-to-br from-primary-100 to-primary-200 overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl">{formation.category.icon}</span>
+                  <div className="p-4 rounded-full bg-white/20 backdrop-blur-sm">
+                    <formation.category.icon size="2xl" color="primary" animated />
+                  </div>
                 </div>
                 <div className="absolute top-4 left-4">
                   <span className="badge-primary">
@@ -278,16 +280,16 @@ export function FeaturedFormations() {
                 {/* Details */}
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-sm text-gray-500">
-                    <Clock className="h-4 w-4 mr-2" />
+                    <EpikaizoIcons.Clock size="sm" color="gray" className="mr-2" />
                     {formation.duration}h
                   </div>
                   <div className="flex items-center text-sm text-gray-500">
-                    <Users className="h-4 w-4 mr-2" />
+                    <EpikaizoIcons.Students size="sm" color="gray" className="mr-2" />
                     {formation.currentStudents}/{formation.maxStudents} étudiants
                   </div>
                   {formation.location && (
                     <div className="flex items-center text-sm text-gray-500">
-                      <MapPin className="h-4 w-4 mr-2" />
+                      <EpikaizoIcons.MapPin size="sm" color="gray" className="mr-2" />
                       {formation.location}
                     </div>
                   )}
@@ -299,7 +301,7 @@ export function FeaturedFormations() {
                     {formatPrice(formation.price, formation.currency)}
                   </div>
                   <div className="flex items-center">
-                    <Star className="h-4 w-4 text-yellow-400 fill-current" />
+                    <EpikaizoIcons.Star size="sm" color="warning" className="fill-current" />
                     <span className="ml-1 text-sm text-gray-600">4.8</span>
                   </div>
                 </div>
@@ -310,7 +312,7 @@ export function FeaturedFormations() {
                   className="btn-primary w-full group-hover:bg-primary-700 transition-colors"
                 >
                   En savoir plus
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <EpikaizoIcons.ArrowRight size="sm" color="white" className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </motion.div>
@@ -330,7 +332,7 @@ export function FeaturedFormations() {
             className="btn-outline btn-lg"
           >
             Voir toutes les formations
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <EpikaizoIcons.ArrowRight size="lg" color="primary" className="ml-2" />
           </Link>
         </motion.div>
       </div>
