@@ -43,7 +43,7 @@ export interface ModernIconProps {
   icon: LucideIcon;
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
   variant?: 'default' | 'outline' | 'filled' | 'gradient';
-  color?: 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'info' | 'gray';
+  color?: 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'info' | 'gray' | 'white';
   className?: string;
   animated?: boolean;
 }
@@ -65,6 +65,7 @@ const colorClasses = {
   error: 'text-red-600',
   info: 'text-cyan-600',
   gray: 'text-gray-600',
+  white: 'text-white',
 };
 
 const variantClasses = {
