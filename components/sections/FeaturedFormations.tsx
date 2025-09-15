@@ -253,7 +253,11 @@ export function FeaturedFormations() {
               <div className="relative h-48 bg-gradient-to-br from-primary-100 to-primary-200 overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="p-4 rounded-full bg-white/20 backdrop-blur-sm">
-                    <formation.category.icon size="2xl" color="primary" animated />
+                    {typeof formation.category.icon === 'string' ? (
+                      <span className="text-6xl">{formation.category.icon}</span>
+                    ) : (
+                      <formation.category.icon size="2xl" color="primary" animated />
+                    )}
                   </div>
                 </div>
                 <div className="absolute top-4 left-4">

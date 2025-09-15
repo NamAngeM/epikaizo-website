@@ -35,7 +35,7 @@ export interface FormationCategory {
   name: string;
   slug: string;
   description: string;
-  icon: string;
+  icon: string | ((props: any) => JSX.Element);
   color: string;
 }
 
