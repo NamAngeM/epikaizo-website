@@ -74,7 +74,13 @@ export function FormationsFilters({ onFiltersChange }: FormationsFiltersProps) {
                   className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300"
                 />
                 <span className="ml-3 text-sm text-gray-700 flex items-center">
-                  <span className="mr-2">{category.icon}</span>
+                  <span className="mr-2">
+                    {typeof category.icon === 'string' ? (
+                      category.icon
+                    ) : (
+                      <category.icon size="sm" color="primary" />
+                    )}
+                  </span>
                   {category.label}
                 </span>
               </label>

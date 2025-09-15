@@ -117,7 +117,11 @@ export function Categories() {
                   {/* Icon */}
                   <div className="text-center mb-6">
                     <div className={`inline-flex items-center justify-center w-20 h-20 rounded-full ${colors.bg} ${colors.border} border-2 mb-4 group-hover:scale-110 transition-transform`}>
-                      <span className="text-4xl">{category.icon}</span>
+                      {typeof category.icon === 'string' ? (
+                        <span className="text-4xl">{category.icon}</span>
+                      ) : (
+                        <category.icon size="2xl" color="primary" />
+                      )}
                     </div>
                   </div>
 
