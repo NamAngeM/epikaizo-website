@@ -215,7 +215,11 @@ export function FormationsList({ filters = {} }: FormationsListProps) {
                 {/* Image */}
                 <div className="relative h-48 bg-gradient-to-br from-primary-100 to-primary-200 overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-6xl">{formation.category.icon}</span>
+                    {typeof formation.category.icon === 'string' ? (
+                      <span className="text-6xl">{formation.category.icon}</span>
+                    ) : (
+                      <formation.category.icon size="2xl" color="primary" animated />
+                    )}
                   </div>
                   <div className="absolute top-4 left-4">
                     <span className="badge-primary">
@@ -281,7 +285,11 @@ export function FormationsList({ filters = {} }: FormationsListProps) {
               // List view
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/3 h-48 md:h-auto bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
-                  <span className="text-6xl">{formation.category.icon}</span>
+                  {typeof formation.category.icon === 'string' ? (
+                    <span className="text-6xl">{formation.category.icon}</span>
+                  ) : (
+                    <formation.category.icon size="2xl" color="primary" animated />
+                  )}
                 </div>
                 <div className="md:w-2/3 p-6">
                   <div className="flex flex-col h-full">

@@ -237,7 +237,11 @@ export function Step1Formation({ data, updateData }: Step1FormationProps) {
             <div className="flex items-start justify-between">
               <div className="flex-1">
                 <div className="flex items-center space-x-3 mb-3">
-                  <span className="text-2xl">{formation.category.icon}</span>
+                  {typeof formation.category.icon === 'string' ? (
+                    <span className="text-2xl">{formation.category.icon}</span>
+                  ) : (
+                    <formation.category.icon size="lg" color="primary" />
+                  )}
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">
                       {formation.title}
