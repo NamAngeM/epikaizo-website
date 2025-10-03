@@ -180,6 +180,7 @@ https://your-project.supabase.co/
 - Déploiement automatique configuré.
 npm
 
+
 #### **Base de Données :**
 - Utilisez l'interface Supabase pour gérer les données
 - Backups automatiques inclus
